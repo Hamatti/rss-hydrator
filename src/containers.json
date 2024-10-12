@@ -1,0 +1,8 @@
+{
+  "hydrator": {
+    "image": ":hydrator-service.hydrator-container.1",
+    "ports": {
+      "5000": "HTTP"
+    }
+  }
+}
