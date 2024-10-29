@@ -22,6 +22,21 @@ This hydrator will embed the video and add the title and description directly in
 
 Add the feed URL (without the `https://` part) at the end of this service's domain and use that as the feed URL you provide to your feed reader.
 
+## Development
+
+First, create a sqlite database `src/cache.db` for caching with `src/schema.sql` as schema.
+
+```shell
+sqlite3 src/cache.db < src/schema.sql
+```
+
+To start the server, `cd` into src folder and run the server with `uv`:
+
+```shell
+cd src/
+uv run server.py
+```
+
 ## AWS & Docker stuff
 
 I mainly followed [this guide](https://aws.amazon.com/tutorials/serve-a-flask-app/).
